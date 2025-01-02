@@ -340,159 +340,159 @@ h2 {
     pointer-events: none;
   }
   
-  /* Accordion for FAQs */
-  .faq-section {
-    margin: 40px 0;
-  }
-  
-  .accordion {
-    background-color: #34a0e9;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.6rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .accordion:hover {
-    background-color: #2c8acc;
-  }
-  
-  .panel {
-    max-height: 0;
+/* Accordion for FAQs */
+.faq-section {
+  margin: 40px 0;
+}
+
+.accordion {
+  background-color: #34a0e9;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: #2c8acc;
+}
+
+.panel {
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+}
+
+.accordion:hover + .panel {
+  display: block;
+  padding: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .list li {
+    width: 300px;
   }
-  
-  .faq .accordion.active + .panel {
-    display: block;
-    padding: 15px;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .list li {
-      width: 300px;
-    }
-  
-    .faq-section {
-      padding: 0 20px;
-    }
-  
-    .panel {
-      padding: 10px;
-    }
-  
-    .accordion {
-      font-size: 1.4rem;
-      padding: 12px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    h2 {
-      font-size: 2rem;
-    }
-  
-    .list li {
-      width: 100%;
-      margin: 10px 0;
-    }
-  
-    .list li img {
-      height: 180px;
-    }
-  
-    .panel {
-      font-size: 1.2rem;
-    }
-  
-    .accordion {
-      font-size: 1.2rem;
-      padding: 10px;
-    }
-  
-    .scroll-up-btn {
-      height: 40px;
-      width: 40px;
-    }
-  
-    .scroll-up-btn .arrow-up {
-      width: 20px;
-      height: 20px;
-    }
-  }
-  
 
   .faq-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
   }
-  
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Accordion button styles */
-  .accordion {
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s ease;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  .accordion:hover {
-    background-color: #0056b3;
-  }
-  
+
   .panel {
-    padding: 0 18px;
-    background-color: #f1f1f1;
-    display: none;
-    overflow: hidden;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    padding: 10px;
   }
-  
+
+  .accordion {
+    font-size: 1.4rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .list li {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .list li img {
+    height: 180px;
+  }
+
+  .panel {
+    font-size: 1.2rem;
+  }
+
+  .accordion {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .scroll-up-btn {
+    height: 40px;
+    width: 40px;
+  }
+
+  .scroll-up-btn .arrow-up {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Accordion button styles */
+.accordion {
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.accordion:hover {
+  background-color: #0056b3;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f1f1f1;
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.panel p {
+  padding: 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq-section {
+    padding: 10px;
+  }
+
+  .accordion {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
   .panel p {
-    padding: 15px;
-    margin: 0;
-    line-height: 1.6;
+    font-size: 0.9rem;
   }
-  
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    .faq-section {
-      padding: 10px;
-    }
-  
-    .accordion {
-      font-size: 1rem;
-      padding: 12px;
-    }
-  
-    .panel p {
-      font-size: 0.9rem;
-    }
-  }
+}
+
 
 
   .footer {
