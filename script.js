@@ -134,3 +134,17 @@ if (typeof gsap !== "undefined") {
     delay: 0.5,
   });
 }
+
+//toggle to Night Theme button
+
+const nightThemeButton = document.querySelector('.btn-3');
+const body = document.body;
+nightThemeButton.addEventListener('click', () => {
+
+  body.classList.toggle('night-theme');
+  if (body.classList.contains('night-theme')) {
+    nightThemeButton.textContent = 'Day Theme';
+  } else {
+    nightThemeButton.textContent = 'Night Theme';
+  }
+});

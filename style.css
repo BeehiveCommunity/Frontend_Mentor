@@ -61,7 +61,7 @@
   align-items: center;
 }
 
-.btn-1, .btn-2 {
+.btn-1, .btn-2, .btn-3 {
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 8px;
@@ -90,6 +90,16 @@
 .btn-2:hover {
   background-color: #ffffff;
   color: #2196f3;
+}
+/*night theme button */
+.btn-3 {
+  background-color: #ffffff;
+  color: #2196f3;
+}
+
+.btn-3:hover {
+  background-color: #bbdefb;
+  color: #1565c0;
 }
 
 .gitstatus {
@@ -203,7 +213,7 @@
       height: 30px;
   }
 
-  .btn-1, .btn-2 {
+  .btn-3,.btn-1, .btn-2 {
       padding: 6px 12px;
       font-size: 12px;
   }
@@ -587,3 +597,13 @@ h2 {
       width: 100%;
     }
   }  
+
+     /*Night Theme*/
+  body.night-theme {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .navbar.night-theme {
+    background-color: #1e1e1e;
+  }
