@@ -565,6 +565,36 @@ h2 {
   .socials a:hover {
     color: #f1c40f;
   }
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+}
+
+.dark-mode .nav-elements a {
+  color: white;
+}
+
+.dark-mode .dark-mode-btn {
+  background: white;
+  color: black;
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
   
   /* Responsive Styling */
   @media (max-width: 768px) {
